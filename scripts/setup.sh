@@ -11,6 +11,10 @@ sudo pacman -S --noconfirm \
 	tmux \
 	btop \
 	alacritty \
+	zoxide \
+	thefuck \
+	atuin \
+	fastfetch \
 	unzip \
 	neovim \
 	base-devel \
