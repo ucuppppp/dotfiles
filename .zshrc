@@ -5,8 +5,8 @@ ZSH_THEME="robbyrussell"
 
 # git
 plugins=(git)
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/ucuppppp
+# eval "$(ssh-agent -s)"
+# ssh-add ~/.ssh/ucuppppp
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +37,6 @@ alias cd="z"
 
 # thefuck
 eval $(thefuck --alias)
+
+clear
+
