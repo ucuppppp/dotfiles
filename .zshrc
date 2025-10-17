@@ -25,11 +25,9 @@ bindkey '^[OA'  atuin-up-search
 bindkey '^[[B'  atuin-down-search
 bindkey '^[OB'  atuin-down-search
 
-# ctrl+n / ctrl+p (dan juga ctrl+j / ctrl+k sebagai cadangan)
+# ctrl+n / ctrl+p
 bindkey '^N'    atuin-down-search
 bindkey '^P'    atuin-up-search
-bindkey '^J'    atuin-down-search
-bindkey '^K'    atuin-up-search
 
 # zoxide
 eval "$(zoxide init zsh)"
