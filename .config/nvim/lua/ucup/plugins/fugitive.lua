@@ -11,7 +11,6 @@ return {
 			vim.cmd("Gdiffsplit")
 		end, { desc = "Git Diff (Fugitive)" })
 
-		-- Load konfigurasi tambahan (kalau ada)
 		require("ucup.plugins.fugitive")
 	end,
 }

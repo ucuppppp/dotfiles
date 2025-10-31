@@ -1,11 +1,6 @@
 function InitMyColor()
 	local color = "rose-pine"
 
-	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-	-- vim.api.nvim_set_hl(0, "TelescopeFloat", { bg = "none" })
-	-- vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
-
 	require("rose-pine").setup({
 		variant = "auto", -- auto, main, moon, or dawn
 		dark_variant = "main", -- main, moon, or dawn
@@ -54,49 +49,9 @@ function InitMyColor()
 			h5 = "pine",
 			h6 = "foam",
 		},
-
-		palette = {
-			-- main = {
-			-- 	base = "#222831",
-			-- 	overlay = "#363738",
-			-- },
-		},
-
-		highlight_groups = {
-			-- Comment = { fg = "foam" },
-			-- VertSplit = { fg = "muted", bg = "muted" },
-		},
-
-		before_highlight = function(group, highlight, palette)
-			-- Disable all undercurls
-			-- if highlight.undercurl then
-			--     highlight.undercurl = false
-			-- end
-			--
-			-- Change palette colour
-			-- if highlight.fg == palette.pine then
-			--     highlight.fg = palette.foam
-			-- end
-		end,
 	})
 
 	vim.cmd.colorscheme(color)
-	-- require("lualine").setup({
-	-- 	options = {
-	-- 		icons_enabled = false,
-	-- 		component_separators = { left = "|", right = "|" },
-	-- 		section_separators = { left = "", right = "" },
-	-- 	},
-	-- 	sections = {
-	-- 		lualine_a = { "mode", { "filename", path = 1 } },
-	-- 		lualine_b = {},
-	-- 		lualine_c = { "branch" },
-	-- 		lualine_x = { "diff", "diagnostics", "encoding" },
-	-- 		lualine_y = { "progress", "location" },
-	-- 		lualine_z = {},
-	-- 	},
-	-- })
-	-- vim.cmd.set("noshowmode")
 end
 
 return {
