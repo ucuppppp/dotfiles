@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
-
-# zsh theme
-ZSH_THEME="robbyrussell"
+#
+# # zsh theme
+ZSH_THEME="gozilla"
 
 # git
 plugins=(git)
@@ -33,8 +33,17 @@ bindkey '^P'    atuin-up-search
 eval "$(zoxide init zsh)"
 alias cd="z"
 
+# eza 
+alias ls="eza --icons=always"
+
 # thefuck
 eval $(thefuck --alias)
+
+# vpn
+alias vpn-up='sudo wg-quick up ucup-NL-FREE-49'
+alias vpn-down='sudo wg-quick down ucup-NL-FREE-49'
+alias vpn-status='sudo wg show'
+
 
 clear
 

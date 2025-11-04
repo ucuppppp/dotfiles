@@ -15,9 +15,9 @@ return {
         "prismals",
         "pyright",
         "eslint",
-		"gopls",
-		"rust_analyzer",
-		"bashls",
+        "gopls",
+        "rust_analyzer",
+        "bashls",
       },
     },
     dependencies = {
