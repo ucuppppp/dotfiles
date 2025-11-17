@@ -6,7 +6,7 @@ if vim.g.vscode then
   -- VSCode Neovim
   require("ucup.vscode_remap")
 else
-  vim.keymap.set("n", "<leader>r, ", ":source %<CR>")
+  vim.keymap.set("n", "<leader>r", ":source %<CR>")
 
   -- Ordinary Neovim
   vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
